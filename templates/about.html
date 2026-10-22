@@ -6,6 +6,11 @@
         <h1 class="page-header">{{ page.title }}</h1>
         <img class="about-portrait" src="{{ page.extra.portrait }}" alt="Jess Izen" width="240" decoding="async" />
         <p class="about-name"><strong>Jess Izen</strong> <span class="pronouns">(she/her)</span></p>
+        <p class="about-socials">
+            {% for social in config.extra.socials %}
+                <a href="{{ social.url }}" rel="me">{{ social.name }}</a>
+            {% endfor %}
+        </p>
         <div class="about-bio">
             {{ page.content | safe }}
             {% include "partials/contact.html" %}

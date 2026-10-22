@@ -128,13 +128,13 @@ nav a[aria-current="page"] {
     border-top: 1px solid var(--border-color);
 }
 
-.footer-socials {
+.footer-socials, .about-socials {
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
 }
 
-.footer-socials a {
+.footer-socials a, .about-socials a {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
