@@ -15,7 +15,15 @@ Before becoming a software engineer, I ran a bicycle messenger company in Richmo
 
 I care deeply about open source communities and about giving maintainers the autonomy and financial support to sustain their work.
 
-## Repositories
+## Contact
+
+{{<contact />}}
+
+[Rust Zulip](https://rust-lang.zulipchat.com/#narrow/dm/783853)
+
+I hang out on the [tokio discord](https://discord.com/invite/tokio).
+
+## Repositories I help maintain
 
 Doing my best to keep up 😅
 
@@ -25,12 +33,4 @@ Doing my best to keep up 😅
 - [awslabs/metrique](https://github.com/awslabs/metrique)
 - [tower-rs/tower-http](https://github.com/tower-rs/tower-http)
 - [tokio-rs/axum](https://github.com/tokio-rs/axum)
-
-## Contact
-
-{{<contact />}}
-
-[Rust Zulip](https://rust-lang.zulipchat.com/#narrow/dm/783853)
-
-I hang out on the [tokio discord](https://discord.com/invite/tokio).
 
