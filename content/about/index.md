@@ -3,6 +3,7 @@ title = "About me"
 description = "Engineer in Residence at the Rust Foundation"
 template = "about.html"
 [extra]
+contact = true
 portrait = "https://rustfoundation.org/wp-content/uploads/2026/08/jess-izen.jpg"
 
 # Unpublished outline for a longer bio:
@@ -40,3 +41,10 @@ Doing my best to keep up 😅
 > Rust is in a moment of great opportunity, and I believe that the Rust community can chart a new course for the industry in supply chain security and maintainer sustainability. I'm looking forward to getting my hands dirty working full-time on infrastructure and programs that reach all Rust users.
 >
 > Besides the colleagues I mentioned in the [linked post](https://lnkd.in/gtgRNQVQ) from the Rust Foundation, Rust Project, Rust community, and AWS, I want to give a special thank you to open source leaders that have shared a steady stream of advice about how companies like AWS can fit into this story while supporting maintainer autonomy: Josh Aas, Benjamin Nickolls, Henri Yandell, Alexander Scammon, George Chellapa Ph.D., Duane O'Brien, Æva Black
+
+## Contact
+
+- [GitHub: jlizen](https://github.com/jlizen)
+- [Tokio Discord](https://discord.com/invite/tokio)
+- [Rust Zulip](https://rust-lang.zulipchat.com/#narrow/dm/783853)
+

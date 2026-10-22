@@ -94,6 +94,22 @@ nav a[aria-current="page"] {
     border-radius: 0.5rem;
 }
 
+.contact-button, .contact summary {
+    width: fit-content;
+    max-width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.3rem;
+    background: var(--bg-1);
+    color: var(--text-0);
+    font: inherit;
+    cursor: pointer;
+}
+
+.contact-button:hover, .contact summary:hover {
+    background: var(--bg-2);
+}
+
 .site-footer {
     margin-top: 4rem;
     padding-top: 1.5rem;
