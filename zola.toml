@@ -37,7 +37,7 @@ social_image_alt = "Jess Izen: Software engineer at AWS; Engineer in Residence a
 menu = [
     { name = "Home", url = "/" },
     { name = "Posts", url = "/posts/" },
-    { name = "About me", url = "/about/" },
+    { name = "About", url = "/about/" },
 ]
 
 socials = [
