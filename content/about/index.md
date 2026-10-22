@@ -13,7 +13,7 @@ I’m a software engineer at AWS, currently seconded to the [Rust Foundation](ht
 
 Before becoming a software engineer, I ran a [bicycle messenger company in Richmond, VA](https://www.instagram.com/quickness.rva/). Helping build its food-delivery ordering platform got me hooked on software engineering. At AWS, I’ve worked on distributed systems for DDoS mitigation and bot control.
 
-I care deeply about open source communities and about giving maintainers the autonomy and financial support to sustain their work.
+I care deeply about open source communities and about supporting maintainers in having the autonomy and financial support to sustain their work.
 
 ## Contact
 
