@@ -1,1 +1,1 @@
-\<LINK TO BLOG\>
+[blog.jessizen.com](https://blog.jessizen.com)
