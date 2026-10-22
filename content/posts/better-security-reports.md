@@ -1,5 +1,6 @@
 +++
 title = "Better security reports through clearer project documentation"
+description = "This matters because we need to prioritize high impact reports. Every report takes maintainer resources."
 draft = true
 # Awaiting the original LinkedIn URL or posting date before backdating.
 # Enable these tags once dated: Apollo's tag listings require a date.

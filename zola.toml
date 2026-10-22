@@ -31,6 +31,8 @@ dynamic_note = false
 mathjax = false
 fediverse = false
 stylesheets = ["custom.css"]
+social_image = "social/preview.png"
+social_image_alt = "Jess Izen: Software engineer at AWS; Engineer in Residence at the Rust Foundation"
 
 menu = [
     { name = "Home", url = "/" },

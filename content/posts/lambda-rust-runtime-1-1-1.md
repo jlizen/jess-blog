@@ -1,5 +1,6 @@
 +++
 title = "Lambda Rust Runtime 1.1.1"
+description = "The headline new feature is concurrent invocation processing on a single lambda instance, using tokio."
 # Original LinkedIn activity timestamp, in UTC.
 date = 2026-03-13
 

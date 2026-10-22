@@ -1,5 +1,6 @@
 +++
 title = "Joining the Rust Project's funding-advisors team"
+description = "One focus for me is finding ways to provide longer time horizon guarantees of funding, for instance multi year contracts or getting people hired on as staff."
 draft = true
 # Awaiting the original LinkedIn URL or posting date before backdating.
 # Enable these tags once dated: Apollo's tag listings require a date.

@@ -1,5 +1,6 @@
 +++
 title = "Engineer in Residence at the Rust Foundation"
+description = "I am excited to put on an additional hat: Engineer in Residence at the Rust Foundation, seconded for a year by AWS."
 # Original LinkedIn activity timestamp, in UTC.
 date = 2026-08-27
 

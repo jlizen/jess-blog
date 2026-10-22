@@ -1,5 +1,6 @@
 +++
 title = "Wide events and metrique 0.1.24"
+description = "We now have a turnkey integration with tokio-metrics (which I also maintain), that allows automatically emitting tokio runtime metrics as metrique records."
 # Original LinkedIn activity timestamp, in UTC.
 date = 2026-04-14
 

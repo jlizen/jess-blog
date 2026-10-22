@@ -35,6 +35,8 @@ jobs:
           check_links: true
           check_flags: --skip-external-links
           build_flags: --base-url "${{ steps.pages.outputs.base_url }}"
+      - name: Check link previews
+        run: python3 scripts/check-previews.py public
 
   deploy:
     if: github.ref == 'refs/heads/main'

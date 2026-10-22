@@ -1,5 +1,6 @@
 +++
 title = "AWS Lambda officially supports Rust"
+description = "Starting today, AWS Lambda functions officially support Rust! This comes with SLAs and roadmap support that will give developers confidence to build in Rust on Lambda."
 # Original LinkedIn activity timestamp, in UTC.
 date = 2025-11-14
 

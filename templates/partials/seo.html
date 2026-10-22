@@ -15,6 +15,9 @@
 {% endif %}
 
 {% set seo_description = config.description %}
+{% if page?.date and not page?.description %}
+    {{ throw(message="Published posts need a description for link previews: " ~ page.title) }}
+{% endif %}
 {% if page?.description %}
     {% set seo_description = page.description %}
 {% elif page?.content %}
@@ -29,7 +32,7 @@
 <meta property="og:title" content="{{ seo_title }}" />
 <meta property="og:description" content="{{ seo_description }}" />
 <meta property="og:site_name" content="{{ config.title }}" />
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ seo_title }}" />
 <meta name="twitter:description" content="{{ seo_description }}" />
 
@@ -53,9 +56,14 @@
     <meta property="og:type" content="website" />
 {% endif %}
 
-{% if page?.extra?.portrait %}
-    <meta property="og:image" content="{{ page.extra.portrait }}" />
-    <meta property="og:image:alt" content="{{ config.author }}" />
-    <meta name="twitter:image" content="{{ page.extra.portrait }}" />
-    <meta name="twitter:image:alt" content="{{ config.author }}" />
-{% endif %}
+{% set social_image = page?.extra?.social_image | default(value=config.extra.social_image) %}
+{% set social_image_alt = page?.extra?.social_image_alt | default(value=config.extra.social_image_alt) %}
+{% set image_info = get_image_metadata(path="static/" ~ social_image) %}
+<meta property="og:image" content="{{ get_url(path=social_image) }}" />
+<meta property="og:image:secure_url" content="{{ get_url(path=social_image) }}" />
+<meta property="og:image:type" content="image/{{ image_info.format }}" />
+<meta property="og:image:width" content="{{ image_info.width }}" />
+<meta property="og:image:height" content="{{ image_info.height }}" />
+<meta property="og:image:alt" content="{{ social_image_alt }}" />
+<meta name="twitter:image" content="{{ get_url(path=social_image) }}" />
+<meta name="twitter:image:alt" content="{{ social_image_alt }}" />

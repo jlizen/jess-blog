@@ -1,5 +1,6 @@
 +++
 title = "Funding Rust through the Rust Commercial Network"
+description = "Does your company depend on Rust? You can see open funding opportunities in the RCN funding directory."
 # Original LinkedIn activity timestamp, in UTC.
 date = 2026-06-30
 
