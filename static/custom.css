@@ -1,0 +1,59 @@
+:root {
+    --header-font: "ZedDisplayFtl", "Space Grotesk", "Helvetica", sans-serif;
+}
+
+body {
+    display: block;
+}
+
+body .content {
+    margin-inline: auto;
+    min-width: 0;
+}
+
+button, summary, a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-0);
+    z-index: 1001;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+nav {
+    gap: 1rem;
+}
+
+nav .right-nav {
+    gap: 0.75rem;
+}
+
+nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 0.4em;
+}
+
+.home-intro {
+    max-width: 44rem;
+}
+
+.home-intro {
+    margin-bottom: 3rem;
+}
+
+.empty-state {
+    color: var(--text-1);
+}

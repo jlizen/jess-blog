@@ -1,16 +1,34 @@
-# The URL the site will be built for
 base_url = "https://blog.jessizen.com"
-
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
-
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
-
-[markdown]
+title = "Jess Izen"
+description = "Software engineer at AWS; Engineer in Residence at the Rust Foundation"
+author = "Jess Izen"
+default_language = "en"
+theme = "apollo"
+compile_sass = true
+build_search_index = false
+taxonomies = [{ name = "tags" }]
 
 [markdown.highlighting]
-theme = "catppuccin-mocha"
+style = "class"
+light_theme = "catppuccin-latte"
+dark_theme = "catppuccin-mocha"
 
 [extra]
-# Put all your custom variables here
+theme = "toggle-auto"
+use_cdn = false
+toc = false
+fancy_code = true
+dynamic_note = false
+mathjax = false
+fediverse = false
+stylesheets = ["custom.css"]
+
+menu = [
+    { name = "Home", url = "/" },
+    { name = "Posts", url = "/posts/" },
+]
+
+socials = []
+
+[extra.analytics]
+enabled = false

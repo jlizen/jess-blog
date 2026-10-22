@@ -1,0 +1,13 @@
+{% extends "section.html" %}
+
+{% block title %}
+<h1 class="page-header">{{ section.title }}</h1>
+{% endblock title %}
+
+{% block post_list %}
+    {% if section.pages %}
+        {{ super() }}
+    {% else %}
+        <main><p class="empty-state">No posts yet.</p></main>
+    {% endif %}
+{% endblock post_list %}

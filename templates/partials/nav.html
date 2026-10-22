@@ -1,0 +1,44 @@
+<nav aria-label="Main navigation">
+    <div class="left-nav">
+        {% if config.extra.logo %}
+            <a href={{ config.base_url }} class="logo">
+                <img alt="{{ config.title }}" src="{{ get_url(path=config.extra.logo) }}" />
+            </a>
+        {% else %}
+            <a href={{ config.base_url }}>{{ config.title }}</a>
+        {% endif %}
+
+
+    </div>
+
+    <div class="right-nav">
+        {% for menu in config.extra.menu %}
+            <a href="{{ get_url(path=menu.url) }}"{% if current_path == menu.url %} aria-current="page"{% endif %}>{{ menu.name }}</a>
+        {% endfor %}
+
+        {% set theme = config.extra.theme | default(value="toggle") %}
+        {% if theme == "toggle" or theme == "toggle-auto" %}
+            <a id="dark-mode-toggle"
+               onclick="toggleTheme(); event.preventDefault();"
+               href="#">
+                <img src="{{ get_url(path='icons/sun.svg') }}" id="sun-icon" alt="Light" />
+                <img src="{{ get_url(path='icons/moon.svg') }}"
+                     id="moon-icon"
+                     style="filter: invert(1)"
+                     alt="Dark" />
+                {% if theme == "toggle-auto" %}
+                    <img src="{{ get_url(path='icons/auto.svg') }}"
+                         id="auto-icon"
+                         style="filter: invert(1)"
+                         alt="Auto" />
+                {% endif %}
+            </a>
+
+            <!-- Initialize the theme toggle icons -->
+            <script>
+                updateItemToggleTheme()
+            </script>
+        {% endif %}
+    </div>
+</nav>
+

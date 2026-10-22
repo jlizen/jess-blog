@@ -1,0 +1,4 @@
+repository = "https://github.com/not-matthias/apollo"
+commit = "31e30e27638aa68394d8625e5c49ad3b8310bf65"
+retrieved = "2026-10-22"
+# Runtime directories, config, theme metadata, README, and MIT license are vendored unchanged.

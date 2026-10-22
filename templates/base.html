@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}" class="dark light">
+    {% include "partials/header.html" %}
+    <body>
+        {% include "apollo/body_start.html" %}
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        {% block left_content %}{% endblock left_content %}
+        <div class="content">
+            {% include "partials/nav.html" %}
+            <div id="main-content" tabindex="-1">
+                {% block main_content %}{% endblock main_content %}
+            </div>
+        </div>
+        {% block right_content %}{% endblock right_content %}
+        {% include "apollo/body_end.html" %}
+    </body>
+</html>
