@@ -46,6 +46,31 @@ nav a[aria-current="page"] {
     text-underline-offset: 0.4em;
 }
 
+.search-button {
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.3rem;
+    color: var(--text-0);
+    font: inherit;
+}
+
+.search-modal #modal-content {
+    box-sizing: border-box;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.search-modal #searchBar {
+    padding: 0.5rem 0;
+}
+
+.search-modal #searchBar #searchInput {
+    box-sizing: border-box;
+    min-width: 0;
+    padding-left: 1rem;
+}
+
 .home-intro {
     max-width: 44rem;
 }

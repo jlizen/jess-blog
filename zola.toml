@@ -5,8 +5,15 @@ author = "Jess Izen"
 default_language = "en"
 theme = "apollo"
 compile_sass = true
-build_search_index = false
+build_search_index = true
 taxonomies = [{ name = "tags" }]
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_json"
 
 [markdown.highlighting]
 style = "class"

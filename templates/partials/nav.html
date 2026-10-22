@@ -16,6 +16,52 @@
             <a href="{{ get_url(path=menu.url) }}"{% if current_path == menu.url %} aria-current="page"{% endif %}>{{ menu.name }}</a>
         {% endfor %}
 
+        {% if config.build_search_index %}
+            <button id="search-button" type="button" aria-haspopup="dialog"
+                    class="search-button"
+                    title="$SHORTCUT to open search">
+                <img src="{{ get_url(path='icons/search.svg') }}"
+                     alt=""
+                     class="search-icon" /><span>Search</span>
+            </button>
+
+            <div id="searchModal"
+                 class="search-modal js"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="modalTitle">
+                <div id="modal-content">
+                    <h1 id="modalTitle" class="page-header">
+                        Search
+                    </h1>
+                    <div id="searchBar">
+                        <input id="searchInput"
+                               role="combobox"
+                               aria-label="Search this site"
+                               autocomplete="off"
+                               spellcheck="false"
+                               aria-expanded="false"
+                               aria-controls="results-container"
+                               placeholder="Search..." />
+                        <button id="clear-search" class="clear-button" title="Clear search">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="results-container">
+                        <div id="results-info">
+                            <span id="zero_results" style="display: none;">No results</span>
+                            <span id="one_results" style="display: none;">1 result</span>
+                            <span id="many_results" style="display: none;">$NUMBER results</span>
+                        </div>
+                        <div id="results" role="listbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
         {% set theme = config.extra.theme | default(value="toggle") %}
         {% if theme == "toggle" or theme == "toggle-auto" %}
             <a id="dark-mode-toggle"
