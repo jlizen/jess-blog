@@ -28,7 +28,7 @@ Doing my best to keep up 😅
 
 ## Contact
 
-- [GitHub: jlizen](https://github.com/jlizen)
-- [Tokio Discord](https://discord.com/invite/tokio)
-- [Rust Zulip](https://rust-lang.zulipchat.com/#narrow/dm/783853)
+[Rust Zulip](https://rust-lang.zulipchat.com/#narrow/dm/783853)
+
+I hang out on the [tokio discord](https://discord.com/invite/tokio).
 
