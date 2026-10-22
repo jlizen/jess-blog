@@ -124,13 +124,24 @@ nav a[aria-current="page"] {
     border-top: 1px solid var(--border-color);
 }
 
-.footer-socials, .about-socials {
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 2rem;
+}
+
+.footer-feeds {
+    margin-inline-start: auto;
+}
+
+.footer-socials, .about-socials, .footer-feeds {
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
 }
 
-.footer-socials a, .about-socials a {
+.footer-socials a, .about-socials a, .footer-feeds a {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;

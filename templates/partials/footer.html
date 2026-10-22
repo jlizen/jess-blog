@@ -1,11 +1,17 @@
 <footer class="site-footer">
-    <div class="footer-socials" aria-label="Social profiles">
-        {% for social in config.extra.socials %}
-            <a href="{{ social.url }}" rel="me" class="social">
-                <img src="{{ get_url(path='icons/social/' ~ social.icon ~ '.svg') }}" alt="" width="18" height="18" />
-                <span>{{ social.name }}</span>
-            </a>
-        {% endfor %}
+    <div class="footer-links">
+        <div class="footer-socials" aria-label="Social profiles">
+            {% for social in config.extra.socials %}
+                <a href="{{ social.url }}" rel="me" class="social">
+                    <img src="{{ get_url(path='icons/social/' ~ social.icon ~ '.svg') }}" alt="" width="18" height="18" />
+                    <span>{{ social.name }}</span>
+                </a>
+            {% endfor %}
+        </div>
+        <div class="footer-feeds" role="group" aria-label="Feeds">
+            <a href="{{ get_url(path='atom.xml', trailing_slash=false) }}" type="application/atom+xml">Atom</a>
+            <a href="{{ get_url(path='rss.xml', trailing_slash=false) }}" type="application/rss+xml">RSS</a>
+        </div>
     </div>
     <p class="site-credit"><a href="https://www.getzola.org/">Zola</a> / <a href="https://github.com/not-matthias/apollo">Apollo</a></p>
 </footer>

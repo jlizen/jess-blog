@@ -7,7 +7,7 @@ theme = "apollo"
 compile_sass = true
 build_search_index = true
 generate_feeds = true
-feed_filenames = ["atom.xml"]
+feed_filenames = ["atom.xml", "rss.xml"]
 taxonomies = [{ name = "tags" }]
 
 [search]
