@@ -83,12 +83,8 @@ nav a[aria-current="page"] {
     padding-left: 1rem;
 }
 
-.home-intro, .about-bio {
+.about-bio {
     max-width: 44rem;
-}
-
-.home-intro {
-    margin-bottom: 3rem;
 }
 
 .about-name {

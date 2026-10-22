@@ -2,12 +2,8 @@
 
 {% block main_content %}
 <main>
-    <section class="home-intro">
-        <h1 class="visually-hidden">{{ section.title }}</h1>
-        {{ section.content | safe }}
-    </section>
     <section class="post-list" aria-labelledby="latest-posts">
-        <h2 id="latest-posts">Latest posts</h2>
+        <h1 id="latest-posts" class="visually-hidden">Latest posts</h1>
         {% set posts = get_section(path="posts/_index.md") %}
         {% if posts.pages %}
             <ul>
