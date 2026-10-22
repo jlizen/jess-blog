@@ -1,0 +1,6 @@
+Ferris the Rustacean
+Creator: Karen Rustad Tölva
+Source: https://rustacean.net/assets/rustacean-flat-noshadow.svg
+License: CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+Modification: square canvas for favicon display; artwork paths unchanged.
