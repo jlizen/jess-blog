@@ -23,16 +23,21 @@ a:not(.logo):not(#dark-mode-toggle):hover {
 }
 
 /* Keep the post prefix inside the link's hover area. */
-.post-header .title::before {
+.post-header .post-title::before {
     content: none;
 }
 
-.post-header .title > a::before {
-    content: "# ";
+.post-prefix {
     color: var(--primary-color);
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-.post-header .title > a:hover::before {
+.post-prefix::before {
+    content: "# ";
+}
+
+.post-header .post-title > a:hover .post-prefix {
     color: inherit;
 }
 
