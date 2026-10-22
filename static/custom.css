@@ -145,6 +145,10 @@ nav a[aria-current="page"] {
     border-top: 1px solid var(--border-color);
 }
 
+.site-footer a {
+    padding-inline: 0.25rem;
+}
+
 .footer-links {
     display: flex;
     flex-wrap: wrap;
