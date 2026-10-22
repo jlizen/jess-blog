@@ -22,6 +22,20 @@ a:not(.logo):not(#dark-mode-toggle):hover {
     box-decoration-break: clone;
 }
 
+/* Keep the post prefix inside the link's hover area. */
+.post-header .title::before {
+    content: none;
+}
+
+.post-header .title > a::before {
+    content: "# ";
+    color: var(--primary-color);
+}
+
+.post-header .title > a:hover::before {
+    color: inherit;
+}
+
 :focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 4px;
