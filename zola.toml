@@ -1,5 +1,5 @@
 base_url = "https://blog.jessizen.com"
-title = "Jess Izen"
+title = "Jess's Blog"
 description = "Software engineer at AWS; Engineer in Residence at the Rust Foundation"
 author = "Jess Izen"
 default_language = "en"
