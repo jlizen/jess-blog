@@ -137,3 +137,12 @@ nav a[aria-current="page"] {
     text-decoration: underline;
     text-underline-offset: 0.2em;
 }
+
+.footnote-definition-label {
+    margin-inline-end: 0.35em;
+}
+
+.footnote-definition > .footnote-definition-label + p {
+    display: inline;
+    margin: 0;
+}
