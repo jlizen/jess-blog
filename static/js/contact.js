@@ -8,17 +8,15 @@
     button.hidden = false;
 
     button.addEventListener("click", () => {
-        const expanded = button.getAttribute("aria-expanded") === "true";
-        if (!info.firstChild) {
-            const address = String.fromCharCode(...encodedAddress);
-            const paragraph = document.createElement("p");
-            const link = document.createElement("a");
-            link.href = "mailto:" + address;
-            link.textContent = address;
-            paragraph.append(link);
-            info.append(paragraph);
-        }
-        info.hidden = expanded;
-        button.setAttribute("aria-expanded", String(!expanded));
-    });
+        const address = String.fromCharCode(...encodedAddress);
+        const paragraph = document.createElement("p");
+        const link = document.createElement("a");
+        link.href = "mailto:" + address;
+        link.textContent = address;
+        paragraph.append(link);
+        info.append(paragraph);
+        button.setAttribute("aria-expanded", "true");
+        button.hidden = true;
+        link.focus();
+    }, { once: true });
 })();
