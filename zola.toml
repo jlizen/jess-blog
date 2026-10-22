@@ -6,6 +6,8 @@ default_language = "en"
 theme = "apollo"
 compile_sass = true
 build_search_index = true
+generate_feeds = true
+feed_filenames = ["atom.xml"]
 taxonomies = [{ name = "tags" }]
 
 [search]

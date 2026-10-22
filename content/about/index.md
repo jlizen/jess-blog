@@ -1,6 +1,6 @@
 +++
 title = "About me"
-description = "Engineer in Residence at the Rust Foundation"
+description = "Software engineer at AWS; Engineer in Residence at the Rust Foundation"
 template = "about.html"
 [extra]
 contact = true
