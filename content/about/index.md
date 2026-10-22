@@ -28,6 +28,8 @@ Doing my best to keep up 😅
 
 ## Contact
 
+{{<contact />}}
+
 [Rust Zulip](https://rust-lang.zulipchat.com/#narrow/dm/783853)
 
 I hang out on the [tokio discord](https://discord.com/invite/tokio).
