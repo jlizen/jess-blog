@@ -15,6 +15,13 @@ button, summary, a {
     -webkit-tap-highlight-color: transparent;
 }
 
+/* Extend the hover color without shifting inline text. */
+a:not(.logo):not(#dark-mode-toggle):hover {
+    box-shadow: 0.2em 0 var(--primary-color), -0.2em 0 var(--primary-color);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
 :focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 4px;
