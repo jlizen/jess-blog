@@ -1,0 +1,6 @@
+{% if config.extra.analytics.enabled and config.extra.analytics.cloudflare_token %}
+    <script defer
+            src="{{ get_url(path='js/analytics.js') }}"
+            data-token="{{ config.extra.analytics.cloudflare_token }}"
+            data-site-url="{{ config.base_url }}"></script>
+{% endif %}

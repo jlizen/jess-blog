@@ -44,4 +44,6 @@ socials = [
 ]
 
 [extra.analytics]
-enabled = false
+enabled = true
+# Public site token from Cloudflare Web Analytics. Disable automatic injection there.
+cloudflare_token = "5b8d42b177a648608de7be524bb5eda3"
