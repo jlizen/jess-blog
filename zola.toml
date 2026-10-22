@@ -36,7 +36,10 @@ menu = [
     { name = "About me", url = "/about/" },
 ]
 
-socials = []
+socials = [
+    { name = "GitHub", url = "https://github.com/jlizen", icon = "github" },
+    { name = "LinkedIn", url = "https://www.linkedin.com/in/jess-izen-12085b161/", icon = "linkedin" },
+]
 
 [extra.analytics]
 enabled = false

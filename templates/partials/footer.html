@@ -1,0 +1,11 @@
+<footer class="site-footer">
+    <div class="footer-socials" aria-label="Social profiles">
+        {% for social in config.extra.socials %}
+            <a href="{{ social.url }}" rel="me" class="social">
+                <img src="{{ get_url(path='icons/social/' ~ social.icon ~ '.svg') }}" alt="" width="18" height="18" />
+                <span>{{ social.name }}</span>
+            </a>
+        {% endfor %}
+    </div>
+    <p class="site-credit"><a href="https://www.getzola.org/">Zola</a> / <a href="https://github.com/not-matthias/apollo">Apollo</a></p>
+</footer>

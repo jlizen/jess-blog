@@ -10,6 +10,7 @@
             <div id="main-content" tabindex="-1">
                 {% block main_content %}{% endblock main_content %}
             </div>
+            {% include "partials/footer.html" %}
         </div>
         {% block right_content %}{% endblock right_content %}
         {% include "apollo/body_end.html" %}
