@@ -8,3 +8,4 @@ Engineer in Residence at the [Rust Foundation](https://rustfoundation.org/about/
 
 Software engineer at AWS
 
+[About me](@/about/index.md)

@@ -33,6 +33,7 @@ stylesheets = ["custom.css"]
 menu = [
     { name = "Home", url = "/" },
     { name = "Posts", url = "/posts/" },
+    { name = "About me", url = "/about/" },
 ]
 
 socials = []

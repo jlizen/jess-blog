@@ -71,7 +71,7 @@ nav a[aria-current="page"] {
     padding-left: 1rem;
 }
 
-.home-intro {
+.home-intro, .about-bio {
     max-width: 44rem;
 }
 
@@ -79,6 +79,17 @@ nav a[aria-current="page"] {
     margin-bottom: 3rem;
 }
 
-.empty-state {
+.about-name {
+    font-size: 1.2rem;
+}
+
+.pronouns, .empty-state {
     color: var(--text-1);
+}
+
+.about-portrait {
+    width: 15rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
 }

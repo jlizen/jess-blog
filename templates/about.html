@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<main>
+    <article class="about">
+        <h1 class="page-header">{{ page.title }}</h1>
+        <img class="about-portrait" src="{{ page.extra.portrait }}" alt="Jess Izen" width="240" decoding="async" />
+        <p class="about-name"><strong>Jess Izen</strong> <span class="pronouns">(she/her)</span></p>
+        <div class="about-bio">
+            {{ page.content | safe }}
+        </div>
+    </article>
+</main>
+{% endblock main_content %}
