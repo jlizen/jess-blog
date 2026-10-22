@@ -1,9 +1,9 @@
 """Check the HTML and image assets that link-preview crawlers receive."""
 
+import argparse
 from html.parser import HTMLParser
 from pathlib import Path
 import struct
-import sys
 from urllib.parse import unquote, urlsplit
 
 
@@ -25,14 +25,23 @@ class Head(HTMLParser):
             self.links.setdefault(attrs.get("rel"), []).append(attrs.get("href", ""))
 
 
-def check(root):
+def check(root, expected_base_url=None):
     pages = list(root.rglob("*.html"))
     if not pages:
         raise ValueError(f"No built pages in {root}")
     for page in pages:
         head = Head()
         head.feed(page.read_text().split("</head>", 1)[0])
-        if head.redirect or "noindex" in head.meta.get("robots", []):
+        if head.redirect:
+            continue
+        if expected_base_url is not None:
+            bases = head.meta.get("base", [])
+            if len(bases) != 1 or bases[0].rstrip("/") != expected_base_url.rstrip("/"):
+                raise ValueError(
+                    f"{page}: expected site URL {expected_base_url}; got {bases}. "
+                    "A wrong build base URL also breaks asset links."
+                )
+        if "noindex" in head.meta.get("robots", []):
             continue
         for key in ("og:title", "og:description", "og:url", "og:image"):
             values = head.meta.get(key, [])
@@ -64,4 +73,8 @@ def check(root):
 
 
 if __name__ == "__main__":
-    check(Path(sys.argv[1] if len(sys.argv) > 1 else "public"))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("root", nargs="?", type=Path, default=Path("public"))
+    parser.add_argument("--expected-base-url", help="Require the deployed site's canonical base URL")
+    args = parser.parse_args()
+    check(args.root, args.expected_base_url)

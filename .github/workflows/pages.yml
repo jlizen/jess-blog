@@ -26,18 +26,16 @@ jobs:
       - name: Check analytics privacy controls
         run: node --test tests/analytics.test.cjs
       - name: Configure Pages
-        id: pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      # Use zola.toml's canonical domain even while Pages settings are changing.
       - name: Build and upload site
         uses: getzola/github-pages@435a833fd3f1edcb28d70576c89e30a6365cd8f7
         with:
           zola_version: v0.23.6
           check_links: true
           check_flags: --skip-external-links
-          # Pages can report HTTP while a custom domain's certificate is provisioning.
-          build_flags: --base-url "https://${{ steps.pages.outputs.host }}${{ steps.pages.outputs.base_path }}"
       - name: Check link previews
-        run: python3 scripts/check-previews.py public
+        run: python3 scripts/check-previews.py public --expected-base-url https://blog.jessizen.com
 
   deploy:
     if: github.ref == 'refs/heads/main'
