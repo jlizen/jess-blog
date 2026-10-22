@@ -34,7 +34,8 @@ jobs:
           zola_version: v0.23.6
           check_links: true
           check_flags: --skip-external-links
-          build_flags: --base-url "${{ steps.pages.outputs.base_url }}"
+          # Pages can report HTTP while a custom domain's certificate is provisioning.
+          build_flags: --base-url "https://${{ steps.pages.outputs.host }}${{ steps.pages.outputs.base_path }}"
       - name: Check link previews
         run: python3 scripts/check-previews.py public
 

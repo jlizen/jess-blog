@@ -47,7 +47,10 @@ def check(root):
         image = urlsplit(head.meta["og:image"][0])
         prefix = base.path.rstrip("/") + "/"
         if image.scheme != "https" or image.netloc != base.netloc or not image.path.startswith(prefix):
-            raise ValueError(f"{page}: preview image must use the public site URL")
+            raise ValueError(
+                f"{page}: preview image must use https://{base.netloc}{prefix}; "
+                f"got {head.meta['og:image'][0]}"
+            )
         image_path = root / unquote(image.path[len(prefix):])
         data = image_path.read_bytes()
         if data[:8] != b"\x89PNG\r\n\x1a\n":
