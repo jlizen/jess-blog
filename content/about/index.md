@@ -11,7 +11,7 @@ portrait = "https://rustfoundation.org/wp-content/uploads/2026/08/jess-izen.jpg"
 
 I’m a software engineer at AWS, currently seconded to the [Rust Foundation](https://rustfoundation.org/about/#jess-izen-engineer-in-residence) as Engineer in Residence. My work focuses on supply chain security, Rust infrastructure, and community libraries. I’m also a member of the [Rust Project](https://rust-lang.org/governance/people/jlizen/) and maintain networking and observability crates.
 
-Before becoming a software engineer, I ran a bicycle messenger company in Richmond, Virginia. Helping build its food-delivery ordering platform got me hooked on software engineering. At AWS, I’ve worked on distributed systems for DDoS mitigation and bot control.
+Before becoming a software engineer, I ran a [bicycle messenger company in Richmond, VA](https://www.instagram.com/quickness.rva/). Helping build its food-delivery ordering platform got me hooked on software engineering. At AWS, I’ve worked on distributed systems for DDoS mitigation and bot control.
 
 I care deeply about open source communities and about giving maintainers the autonomy and financial support to sustain their work.
 
