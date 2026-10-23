@@ -57,3 +57,8 @@ repo = "jlizen/jess-blog"
 repo_id = "R_kgDOVTKVcQ"
 category = "General"
 category_id = "DIC_kwDOVTKVcc4DJYcA"
+
+[extra.contact]
+turnstile_site_key = "0x4AAAAAAFhzTyJ5B5OGP3NU"
+# Set to the deployed Worker's https://...workers.dev/api/contact URL.
+endpoint = ""

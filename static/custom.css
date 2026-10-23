@@ -128,7 +128,7 @@ nav a[aria-current="page"] {
     border-radius: 0.5rem;
 }
 
-.contact-button, .contact summary {
+.contact-button {
     width: fit-content;
     max-width: 100%;
     padding: 0.75rem 1rem;
@@ -140,8 +140,17 @@ nav a[aria-current="page"] {
     cursor: pointer;
 }
 
-.contact-button:hover, .contact summary:hover {
+.contact-button:hover {
     background: var(--bg-2);
+}
+
+.contact-button:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+#contact-status:empty {
+    display: none;
 }
 
 .site-footer {

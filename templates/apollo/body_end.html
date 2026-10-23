@@ -1,4 +1,6 @@
 {% if page?.extra?.contact %}
-    <script defer src="{{ get_url(path='js/contact.js') }}"></script>
+    <script defer src="{{ get_url(path='js/contact.js') }}"
+            data-sitekey="{{ config.extra.contact.turnstile_site_key }}"
+            data-endpoint="{{ config.extra.contact.endpoint }}"></script>
 {% endif %}
 {% include "partials/analytics.html" %}

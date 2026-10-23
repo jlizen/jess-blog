@@ -19,7 +19,7 @@ I care deeply about open source communities and about supporting maintainers in 
 
 {{<contact />}}
 
-[Rust Zulip](https://rust-lang.zulipchat.com/#narrow/dm/783853)
+[DM me on the RustLang Zulip](https://rust-lang.zulipchat.com/#narrow/dm/783853)
 
 I hang out on the [tokio discord](https://discord.com/invite/tokio).
 
