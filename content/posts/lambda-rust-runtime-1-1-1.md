@@ -6,6 +6,9 @@ date = 2026-03-13
 
 [taxonomies]
 tags = ["rust", "aws-lambda", "tokio"]
+
+[extra]
+comments = false
 +++
 
 *This was pulled from my old [LinkedIn](https://www.linkedin.com/posts/jess-izen-12085b161_release-v111-awsaws-lambda-rust-runtime-activity-7438296402595651584-wDwN).*

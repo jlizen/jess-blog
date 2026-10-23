@@ -150,6 +150,12 @@ nav a[aria-current="page"] {
     border-top: 1px solid var(--border-color);
 }
 
+.comments {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
 .site-footer a {
     padding-inline: 0.25rem;
 }

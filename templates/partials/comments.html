@@ -1,0 +1,15 @@
+{% if config.extra.giscus.enabled %}
+    {% if not config.extra.giscus.repo or not config.extra.giscus.repo_id or not config.extra.giscus.category or not config.extra.giscus.category_id %}
+        {{ throw(message="Complete extra.giscus in zola.toml before enabling comments. Get the repository and category IDs from https://giscus.app.") }}
+    {% endif %}
+    <section class="comments" aria-labelledby="comments-heading">
+        <h2 id="comments-heading">Comments</h2>
+        <div class="giscus"></div>
+        <noscript><a href="https://github.com/{{ config.extra.giscus.repo }}/discussions">View discussions on GitHub</a></noscript>
+        <script defer src="{{ get_url(path='js/comments.js') }}"
+                data-repo="{{ config.extra.giscus.repo }}"
+                data-repo-id="{{ config.extra.giscus.repo_id }}"
+                data-category="{{ config.extra.giscus.category }}"
+                data-category-id="{{ config.extra.giscus.category_id }}"></script>
+    </section>
+{% endif %}

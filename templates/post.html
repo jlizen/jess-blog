@@ -1,0 +1,8 @@
+{% extends "apollo/templates/page.html" %}
+
+{% block main_content %}
+    {{ super() }}
+    {% if not page.draft and page.extra?.comments | default(value=true) %}
+        {% include "partials/comments.html" %}
+    {% endif %}
+{% endblock main_content %}

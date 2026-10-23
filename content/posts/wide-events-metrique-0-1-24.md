@@ -6,6 +6,9 @@ date = 2026-04-14
 
 [taxonomies]
 tags = ["rust", "observability", "tokio"]
+
+[extra]
+comments = false
 +++
 
 *This was pulled from my old [LinkedIn](https://www.linkedin.com/posts/jess-izen-12085b161_release-metrique-v0124-awslabsmetrique-activity-7449895340465393664-kyQk).*

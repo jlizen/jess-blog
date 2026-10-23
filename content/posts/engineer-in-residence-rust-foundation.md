@@ -6,6 +6,9 @@ date = 2026-08-27
 
 [taxonomies]
 tags = ["rust", "rust-foundation", "maintainers"]
+
+[extra]
+comments = false
 +++
 
 *This was pulled from my old [LinkedIn](https://www.linkedin.com/posts/jess-izen-12085b161_i-am-excited-to-put-on-an-additional-hat-activity-7498790203780943872-6Pr0).*

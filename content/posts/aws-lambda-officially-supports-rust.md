@@ -6,6 +6,9 @@ date = 2025-11-14
 
 [taxonomies]
 tags = ["rust", "aws-lambda"]
+
+[extra]
+comments = false
 +++
 
 *This was pulled from my old [LinkedIn](https://www.linkedin.com/posts/jess-izen-12085b161_release-release-10-awsaws-lambda-rust-runtime-activity-7395174562159763459-izHZ).*

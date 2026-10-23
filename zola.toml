@@ -49,3 +49,11 @@ socials = [
 enabled = true
 # Public site token from Cloudflare Web Analytics. Disable automatic injection there.
 cloudflare_token = "5b8d42b177a648608de7be524bb5eda3"
+
+[extra.giscus]
+# Repository and category IDs come from https://giscus.app.
+enabled = true
+repo = "jlizen/jess-blog"
+repo_id = "R_kgDOVTKVcQ"
+category = "General"
+category_id = "DIC_kwDOVTKVcc4DJYcA"

@@ -6,6 +6,9 @@ draft = true
 # Enable these tags once dated: Apollo's tag listings require a date.
 # [taxonomies]
 # tags = ["rust", "security", "maintainers"]
+
+[extra]
+comments = false
 +++
 
 *This was pulled from my old [LinkedIn](https://lnkd.in/p/gvuSj5Kt).*
