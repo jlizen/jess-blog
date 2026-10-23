@@ -23,16 +23,16 @@ I care deeply about open source communities and about supporting maintainers in 
 
 I hang out on the [tokio discord](https://discord.com/invite/tokio).
 
-## Repositories I help maintain
+## Projects I help maintain
 
 Doing my best to keep up 😅
 
 - [aws/aws-lambda-rust-runtime](https://github.com/aws/aws-lambda-rust-runtime)
-- [tokio-rs/tokio-metrics](https://github.com/tokio-rs/tokio-metrics)
-- [dial9-rs/dial9](https://github.com/dial9-rs/dial9)
 - [awslabs/metrique](https://github.com/awslabs/metrique)
-- [tower-rs/tower-http](https://github.com/tower-rs/tower-http)
+- [dial9-rs/dial9](https://github.com/dial9-rs/dial9)
 - [tokio-rs/axum](https://github.com/tokio-rs/axum)
+- [tokio-rs/tokio-metrics](https://github.com/tokio-rs/tokio-metrics)
+- [tower-rs/tower-http](https://github.com/tower-rs/tower-http)
 
 ## Other projects
 
