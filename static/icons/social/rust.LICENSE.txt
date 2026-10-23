@@ -1,0 +1,6 @@
+Rust logo, from the Rust Project's rust-artwork repository.
+Source: https://github.com/rust-lang/rust-artwork/blob/main/logo/rust-logo.svg
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Modification: added a viewBox so the logo scales to the social-link icon size.

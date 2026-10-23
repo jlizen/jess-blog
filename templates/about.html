@@ -13,6 +13,10 @@
                     <span>{{ social.name }}</span>
                 </a>
             {% endfor %}
+            <a href="https://rust-lang.org/governance/people/jlizen/" rel="me" class="social">
+                <img src="{{ get_url(path='icons/social/rust.svg') }}" alt="" width="18" height="18" />
+                <span>RustLang</span>
+            </a>
         </p>
         <div class="about-bio">
             {{ page.content | safe }}
