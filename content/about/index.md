@@ -34,3 +34,6 @@ Doing my best to keep up 😅
 - [tower-rs/tower-http](https://github.com/tower-rs/tower-http)
 - [tokio-rs/axum](https://github.com/tokio-rs/axum)
 
+## Other projects
+
+- [crates.io supply chain hardening](https://goals.rust-lang.org/2026/crates-io-supply-chain-hardening.html)
