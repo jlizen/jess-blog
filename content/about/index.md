@@ -3,7 +3,6 @@ title = "About me"
 description = "Software engineer at AWS; Engineer in Residence at the Rust Foundation"
 template = "about.html"
 [extra]
-contact = true
 portrait = "https://rustfoundation.org/wp-content/uploads/2026/08/jess-izen.jpg"
 
 # Source: https://rustfoundation.org/about/#jess-izen-engineer-in-residence
@@ -17,7 +16,7 @@ I care deeply about open source communities and about supporting maintainers in 
 
 ## Contact
 
-{{<contact />}}
+[rust@jessizen.com](mailto:rust@jessizen.com)
 
 [DM me on the RustLang Zulip](https://rust-lang.zulipchat.com/#narrow/dm/783853)
 
