@@ -8,12 +8,9 @@
         {% if posts.pages %}
             <ul>
                 {% for post in posts.pages %}
-                    {% if loop.index <= 5 %}
-                        {{<post.list_post page={post} />}}
-                    {% endif %}
+                    {{<post.list_post page={post} />}}
                 {% endfor %}
             </ul>
-            <p><a href="{{ posts.permalink }}">All posts</a></p>
         {% else %}
             <p class="empty-state">No posts yet.</p>
         {% endif %}
